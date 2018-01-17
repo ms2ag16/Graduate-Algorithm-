@@ -21,12 +21,10 @@ def open_res(locations, profit,k):
             if locations[i]-locations[j]>=k:
                 if profit[i]+P[j]>=temp_max:
                     temp_max=profit[i]+P[j]
-            else:
-                if temp_max<=P[i-1]:
-                    temp_max=P[i-1]
+          
         P[i]=temp_max
 
-    return P
+    return max(P)
 
 
 if __name__=='__main__':
