@@ -23,8 +23,10 @@ def open_res(locations, profit,k):
                     temp_max=profit[i]+P[j]
           
         P[i]=temp_max
+        
+    max_location=P.index(max(P))
 
-    return max(P)
+    return max(P),max_location
 
 
 if __name__=='__main__':
