@@ -50,14 +50,36 @@ def Max_subarray_DC(data, left, right):
 # Divide and Conquer O(nlogn)
 """ divide the array into right and left side, and recursively solve the problem
 the maxsubarray either in left side, right side or part left and right plus the middle one"""
-def Max_subarray_DC(data,start,end):
-    if start>end:
-        return 0
-    if start==end:
-        return (0,data)
-    mid=(start+end)/2
-    leftMaxArray=Max_subarray_DC(data,start,mid)
-    rightMaxArray=Max_subarray_DC(data,mid+1,end)
+def Max_subarray_DC(data, left, right):
+    # base case
+    if left==right:
+        return data[left]
+
+    center=int((left+right)/2)
+
+    # recursive to left, right
+    MaxLeftSum=Max_subarray_DC(data,left,center)
+    MaxRightSum=Max_subarray_DC(data,center+1,right)
+
+    # if it contains both right and left
+    maxLeftbordersum=data[center]
+    Leftbordersum=data[center]
+
+
+    for i in range(left,center):
+        Leftbordersum+=data[center-1-i]
+        if (Leftbordersum>maxLeftbordersum):
+            maxLeftbordersum=Leftbordersum
+
+
+    maxRightbordersum=data[center+1]
+    Rightbordersum=data[center+1]
+    for i in range(center+2,right+1):
+        Rightbordersum+=data[i]
+        if (Rightbordersum>maxRightbordersum):
+            maxRightbordersum=Rightbordersum
+
+    return (maxLeftbordersum+maxRightbordersum,MaxRightSum,MaxLeftSum)
     
 
 
