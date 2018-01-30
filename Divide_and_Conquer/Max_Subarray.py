@@ -17,11 +17,12 @@ def Max_subarray_square(data):
 """ so, the max_end_here either is itself data[i] or data[i]+sum[0:i-1],"""
 """ and the result max_so_far is max(data[i], max_end_here[i-1]+data[i])"""
 def Max_subarray_DP(data):
-    n=len(data)
-    max_end_here=[0 for i in range(n)]
-    for i in range(1,n):
+   n=len(data)
+    # base case
+   max_end_here=[0 for i in range(n)]
+   for i in range(1,n):
         max_end_here[i]=max(max_end_here[i-1]+data[i],data[i])
-    return max(max_end_here)
+   return max(max_end_here)
 
 # Divide and Conquer O(nlogn)
 """ divide the array into right and left side, and recursively solve the problem
