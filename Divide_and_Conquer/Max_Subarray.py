@@ -20,9 +20,7 @@ def Max_subarray_DP(data):
    n=len(data)
     # base case
    max_end_here=[0 for i in range(n)]
-   if left==right:
-        for i in range(1,n):
-        return data[left]
+   for i in range(1,n):
         max_end_here[i]=max(max_end_here[i-1]+data[i],data[i])
    return max(max_end_here)
 
