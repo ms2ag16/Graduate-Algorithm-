@@ -16,36 +16,15 @@ def Max_subarray_square(data):
 """ when know sum[0:i-1], let max_ending_here= max sum when include data[i], """
 """ so, the max_end_here either is itself data[i] or data[i]+sum[0:i-1],"""
 """ and the result max_so_far is max(data[i], max_end_here[i-1]+data[i])"""
-def Max_subarray_DC(data, left, right):
+def Max_subarray_DP(data):
+   n=len(data)
     # base case
-    if left==right:
+   max_end_here=[0 for i in range(n)]
+   if left==right:
+        for i in range(1,n):
         return data[left]
-
-    center=int((left+right)/2)
-
-    # recursive to left, right
-    MaxLeftSum=Max_subarray_DC(data,left,center)
-    MaxRightSum=Max_subarray_DC(data,center+1,right)
-
-    # if it contains both right and left
-    maxLeftbordersum=data[center]
-    Leftbordersum=data[center]
-
-
-    for i in range(left,center):
-        Leftbordersum+=data[center-1-i]
-        if (Leftbordersum>maxLeftbordersum):
-            maxLeftbordersum=Leftbordersum
-
-
-    maxRightbordersum=data[center+1]
-    Rightbordersum=data[center+1]
-    for i in range(center+2,right+1):
-        Rightbordersum+=data[i]
-        if (Rightbordersum>maxRightbordersum):
-            maxRightbordersum=Rightbordersum
-
-    return (maxLeftbordersum+maxRightbordersum,MaxRightSum,MaxLeftSum)
+        max_end_here[i]=max(max_end_here[i-1]+data[i],data[i])
+   return max(max_end_here)
 
 # Divide and Conquer O(nlogn)
 """ divide the array into right and left side, and recursively solve the problem
