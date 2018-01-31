@@ -40,7 +40,7 @@ def Max_subarray_DC(data, left, right):
 
     # if it contains both right and left
     maxLeftbordersum=data[center]
-    Leftbordersum=data[center]
+    Leftbordersum=0
 
 
     for i in range(left,center):
@@ -50,7 +50,7 @@ def Max_subarray_DC(data, left, right):
 
 
     maxRightbordersum=data[center+1]
-    Rightbordersum=data[center+1]
+    Rightbordersum=0
     for i in range(center+2,right+1):
         Rightbordersum+=data[i]
         if (Rightbordersum>maxRightbordersum):
