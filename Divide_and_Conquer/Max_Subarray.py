@@ -43,15 +43,15 @@ def Max_subarray_DC(data, left, right):
     Leftbordersum=0
 
 
-    for i in range(left,center):
-        Leftbordersum+=data[center-1-i]
+    for i in range(center,left-1):
+        Leftbordersum+=data[i]
         if (Leftbordersum>maxLeftbordersum):
             maxLeftbordersum=Leftbordersum
 
 
     maxRightbordersum=data[center+1]
     Rightbordersum=0
-    for i in range(center+2,right+1):
+    for i in range(center+1,right+1):
         Rightbordersum+=data[i]
         if (Rightbordersum>maxRightbordersum):
             maxRightbordersum=Rightbordersum
