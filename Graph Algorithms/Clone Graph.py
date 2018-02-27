@@ -5,6 +5,8 @@ class UndirectedGraphNode:
          self.label = x
          self.neighbors = []
 
+          # @param node, a undirected graph node
+          
 def cloneGraph(node):
         if not node:
             return node
