@@ -13,11 +13,11 @@ class Solution(object):
         for i in range(1,m):
             dp[i][0]=dp[i-1][0] if obstacleGrid[i][0]==0 else 0
         for i in range(1,n):
-            dp[0][i]=dp[0][j-1] if obstacleGrid[0][i]==0 else 0
+            dp[0][i]=dp[0][i-1] if obstacleGrid[0][i]==0 else 0
 
         # recurrence
-        for i in range(m):
-            for j in range(n):
+        for i in range(1,m):
+            for j in range(1,n):
                 if obstacleGrid[i][j]==1:
                     dp[i][j]=0
                 else:
