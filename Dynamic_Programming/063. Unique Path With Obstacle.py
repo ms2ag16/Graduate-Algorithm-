@@ -4,12 +4,28 @@ class Solution(object):
         :type obstacleGrid: List[List[int]]
         :rtype: int
         """
-        m,n,dp=len(obstacleGrid),len(obstacleGrid[0]),[0,1]
-        dp+=[0]*(n-1)
-        for i in xrange(1,m+1):
-            for j in xrange(1,n+1):
-                dp[j]=(not obstacleGrid[i-1][j-1])* (dp[j]+dp[j-1])
-        return dp[-1]
+        m=len(obstacleGrid)
+        n=len(obstacleGrid[0])
+        dp=[[0 for i in range(n)] for j in range(m)]
+        # base case
+        dp[0][0]=1
+
+        for i in range(1,m):
+            dp[i][0]=dp[i-1][0] if obstacleGrid[i][0]==0 else 0
+        for i in range(1,n):
+            dp[0][i]=dp[0][j-1] if obstacleGrid[0][i]==0 else 0
+
+        # recurrence
+        for i in range(m):
+            for j in range(n):
+                if obstacleGrid[i][j]==1:
+                    dp[i][j]=0
+                else:
+                    dp[i][j]=dp[i-1][j]+dp[i][j-1]
+
+        return dp[m-1][n-1]
+
+
 
 
 if __name__=='__main__':
