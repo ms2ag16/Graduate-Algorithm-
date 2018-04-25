@@ -6,9 +6,13 @@ class Solution(object):
         """
         m=len(obstacleGrid)
         n=len(obstacleGrid[0])
+      
         dp=[[0 for i in range(n)] for j in range(m)]
         # base case
         dp[0][0]=1
+        
+        if obstacleGrid[0][0]==1:
+            return 0
 
         for i in range(1,m):
             dp[i][0]=dp[i-1][0] if obstacleGrid[i][0]==0 else 0
