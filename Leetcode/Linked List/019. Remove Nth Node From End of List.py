@@ -41,3 +41,18 @@ class Solution(object):
             first=first.next
         first.next=first.next.next
         return dummy.next
+ 
+
+if __name__ == "__main__":
+    n5 = ListNode(5)
+    n4 = ListNode(4)
+    n3 = ListNode(3)
+    n2 = ListNode(2)
+    n1 = ListNode(1)
+    n1.next = n2
+    n2.next = n3
+    n3.next = n4
+    n4.next = n5
+    result = Solution().removeNthFromEnd(n1, 5)
+    result.myPrint()
+
