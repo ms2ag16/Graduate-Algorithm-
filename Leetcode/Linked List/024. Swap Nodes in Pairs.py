@@ -11,9 +11,6 @@ You may not modify the values in the list's nodes, only nodes itself may be chan
 
 """
 
-
-
-
 # Definition for singly-linked list.
 class ListNode(object):
      def __init__(self, x):
@@ -30,12 +27,22 @@ class Solution(object):
         dummy.next=head
         while point.next and point.next.next:
       
-            tmp=point.next.next 
-        
-            point.next.next=tmp.next
-      
-            tmp.next=point.next
-       
+            tmp=point.next.next      
+            point.next.next=tmp.next     
+            tmp.next=point.next     
             point.next=tmp
             point=point.next.next
      return dummy.next
+
+if __name__ == "__main__":
+    n5 = ListNode(5)
+    n4 = ListNode(4)
+    n3 = ListNode(3)
+    n2 = ListNode(2)
+    n1 = ListNode(1)
+    n1.next = n2
+    n2.next = n3
+    n3.next = n4
+    n4.next = n5
+    result = Solution().swapPairs(n1)
+    print (result.myPrint())
