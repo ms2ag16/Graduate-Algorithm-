@@ -26,3 +26,16 @@ class Solution(object):
         :type head: ListNode
         :rtype: ListNode
         """
+        dummy=point=ListNode(0)
+        dummy.next=head
+        while point.next and point.next.next:
+      
+            tmp=point.next.next 
+        
+            point.next.next=tmp.next
+      
+            tmp.next=point.next
+       
+            point.next=tmp
+            point=point.next.next
+     return dummy.next
