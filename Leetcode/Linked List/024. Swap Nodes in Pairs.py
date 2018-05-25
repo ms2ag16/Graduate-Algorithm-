@@ -30,12 +30,12 @@ class Solution(object):
         dummy=point=ListNode(0)
         dummy.next=head
         while point.next and point.next.next:
-      
-            tmp=point.next.next      
-            point.next.next=tmp.next     
-            tmp.next=point.next     
-            point.next=tmp
-            point=point.next.next
+             tmp=point.next.next
+             point.next.next=tmp.next
+             tmp.next=point.next
+             point.next=tmp
+             point=point.next.next
+
      return dummy.next
 
 if __name__ == "__main__":
