@@ -15,10 +15,14 @@ You may not alter the values in the list's nodes, only nodes itself may be chang
 """
 
 # Definition for singly-linked list.
-# class ListNode(object):
-#     def __init__(self, x):
-#         self.val = x
-#         self.next = None
+class ListNode(object):
+     def __init__(self, x):
+         self.val = x
+         self.next = None
+     def myPrint(self):
+         print (self.val)
+         if self.next:
+             self.next.myPrint()      
 
 class Solution(object):
     def reverseKGroup(self, head, k):
@@ -27,3 +31,9 @@ class Solution(object):
         :type k: int
         :rtype: ListNode
         """
+        if not head or k<=1:
+            return head
+        dummy=ListNode(0)
+        dummy.next=head
+        
+        
