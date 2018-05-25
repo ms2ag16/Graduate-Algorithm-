@@ -31,9 +31,14 @@ class Solution(object):
         :type k: int
         :rtype: ListNode
         """
-        if not head or k<=1:
-            return head
-        dummy=ListNode(0)
+        dummy=point=ListNode(0)
         dummy.next=head
+        while point:
+            point=self.reverseNextK(point,k)
+        return dummy.next
+    
+        
+        
+     
         
         
