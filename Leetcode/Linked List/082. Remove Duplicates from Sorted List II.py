@@ -37,7 +37,7 @@ class Solution(object):
             is_repeat=False
           else:
             cur=cur.next
-         return dummy.next
+        return dummy.next
 
 
 if __name__ == "__main__":
