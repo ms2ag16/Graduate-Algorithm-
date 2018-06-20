@@ -27,3 +27,8 @@ class Solution(object):
              else:
                r=mid-1
         return l
+
+
+if __name__ == "__main__":
+    print Solution().searchInsert([1, 3, 5, 6], 5)
+    assert Solution().searchInsert([1, 3, 5, 6], 2) == 1    
