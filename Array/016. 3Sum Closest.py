@@ -18,5 +18,23 @@ class Solution(object):
         nums.sort()
         closet_sum=pow(2,32)-1
         for i in range(len(nums)-2):
-        
-        
+            """ remove duplicate situation """
+            if i==0 or nums[i]>nums[i-1]:
+                left=i+1
+                right =len(nums)-1
+                while left<right:
+                    diff=nums[left]+nums[right]+nums[i]-target
+                    if abs(diff)<abs(closet_sum):
+                        closet_sum=diff
+                    if diff==0:
+                        return target
+                    elif diff<0:
+                        left+=1
+                    else:
+                        right-=1
+         return closet_sum+target
+                    
+                    
+  
+if __name__ == "__main__":
+    print Solution().threeSumClosest([-1, 0, 1, 2, -1, -4], 5)      
