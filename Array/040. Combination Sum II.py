@@ -17,3 +17,33 @@ A solution set is:
   [1, 1, 6]
 ]
 """
+class Solution(object):
+    def combinationSum2(self, candidates, target):
+        """
+        :type candidates: List[int]
+        :type target: int
+        :rtype: List[List[int]]
+        """
+        
+        if not candidates:
+            return []
+        candidates.sort()
+        result=[]
+        self.dfs(candidates, target, [], result)
+        return result
+    
+    def dfs (self, candidates, target, current, result):
+        s=sum(current) if current else 0
+        if s> target:
+            return
+        elif s==target:
+            result.append(current)
+            return
+        else:
+            i=0
+            while i < len(candidates):
+                self.dfs(candidates[i+1:], target, current+[candidates[i]], result)
+                while i+1 < len(candidates) and candidates[i+1]==candidates[i]:
+                    i+=1
+                i+=1
+                
