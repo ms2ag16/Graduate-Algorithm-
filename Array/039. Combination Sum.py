@@ -40,6 +40,16 @@ class Solution(object):
             for i, v in enumerate (candidates):
                  """ because no duplicate combination, so only add the element after candidates[i]"""
                 self.dfs(candidates[i:], target, cur_num+[v], result)
+                
+     def dfs2(self,candidates, target, start, valuelist,result):
+        length=len(candidates)
+        if target==0:
+          return result.append(valuelist)
+        for i in range(start,length):
+            if target< candidates[i]:
+                return
+            self.dfs(candidates, target-candidates[i], i, valuelist+[candidates[i]]
+ 
      
 if __name__ == "__main__":
     print Solution().combinationSum([2, 3, 6, 7], 7)
