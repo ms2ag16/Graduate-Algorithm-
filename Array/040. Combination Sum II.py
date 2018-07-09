@@ -24,7 +24,23 @@ class Solution(object):
         :type target: int
         :rtype: List[List[int]]
         """
+        if not candidates:
+            return []
+        candidates.sort()
+        result=[]
+        self.dfs(candidates, target, 0, [], result)
+        return result
         
+    def dfs(self, candidates, target, start, valuelist, result):
+        length=len(candidates)
+        if target==0 and valuelist not in result:
+            return result.append(valuelist)
+
+        for i in range(start, length):
+            if target<candidates[i]:
+                return
+            self.dfs(candidates,target-candidates[i],i+1,valuelist+[candidates[i]], result)
         
 
-                
+ if __name__ == "__main__":
+    print Solution().combinationSum2([10,1,2,7,6,1,5],8)               
