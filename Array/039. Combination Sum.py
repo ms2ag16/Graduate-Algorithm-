@@ -38,6 +38,7 @@ class Solution(object):
             result.append(cur_num)
         else:
             for i, v in enumerate (candidates):
+                 """ because no duplicate combination, so only add the element after candidates[i]"""
                 self.dfs(candidates[i:], target, cur_num+[v], result)
      
 if __name__ == "__main__":
