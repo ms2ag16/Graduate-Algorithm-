@@ -9,3 +9,32 @@ Here are some examples. Inputs are in the left-hand column and its corresponding
 1,1,5 → 1,5,1
 
 """
+class Solution(object):
+    def nextPermutation(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: void Do not return anything, modify nums in-place instead.
+        """
+        length=len(nums)
+
+        targetIndex=0
+        changeIndex=0
+        for i in range(length-1,0,-1):
+            if nums[i]>nums[i-1]:
+                targetIndex=i-1
+                break
+
+        for i in range(length-1, -1, -1):
+            if nums[i]>nums[targetIndex]:
+                changeIndex=i
+                break
+
+        nums[targetIndex],nums[changeIndex]=nums[changeIndex],nums[targetIndex]
+        if targetIndex==changeIndex==0:
+            nums.reverse()
+        else:
+            nums[targetIndex+1:]=reversed(nums[targetIndex+1:])
+            
+""" since targetIndex is the one smaller than changeIndex number 
+but it's larger than others number after changeIndex, 
+so we need reverse the number after change/target reverse their position"""
