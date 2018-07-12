@@ -16,7 +16,24 @@ class Solution(object):
         :type target: int
         :rtype: int
         """
-"""
-        二分搜索是针对有序数组而言，对于中间有次转折的有序数组，只是要多区分几种情况，二分搜索依然是适用的。
-        主要就是判断mid的左右哪边是中断的
-"""
+        left =0
+        right=len(nums)-1
+        
+        while left<=right:
+            mid=(left+right)/2
+            
+            if nums[mid]==target:
+                return mid
+            
+            if nums[mid]>nums[left]: # left part is organized
+                if nums[left]<=target<numd[mid]:
+                    right=mid-1
+                else:
+                    left=mid+1
+            else: # right part is organized
+                if nums[mid]<target<=nums[right]:
+                    left=mid+1
+                else:
+                    right=mid-1
+         return -1
+    
