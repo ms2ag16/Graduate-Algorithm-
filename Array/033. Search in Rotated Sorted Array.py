@@ -9,3 +9,14 @@ Example 1:
 Input: nums = [4,5,6,7,0,1,2], target = 0
 Output: 4
 """
+class Solution(object):
+    def search(self, nums, target):
+        """
+        :type nums: List[int]
+        :type target: int
+        :rtype: int
+        """
+"""
+        二分搜索是针对有序数组而言，对于中间有次转折的有序数组，只是要多区分几种情况，二分搜索依然是适用的。
+        主要就是判断mid的左右哪边是中断的
+"""
