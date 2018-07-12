@@ -25,7 +25,7 @@ class Solution(object):
             if nums[mid]==target:
                 return mid
             
-            if nums[mid]>nums[left]: # left part is organized
+            if nums[mid]>=nums[left]: # left part is organized
                 if nums[left]<=target<numd[mid]:
                     right=mid-1
                 else:
