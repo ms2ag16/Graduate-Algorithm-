@@ -30,11 +30,11 @@ class Solution(object):
             for i in range(left,right):
                 result.append(matrix[top][i])
             for i in range(top, bottom):
-                result.append(matrix[i][left])
+                result.append(matrix[i][right])
             for i in range(right, left,-1):
                 result.append(matrix[bottom][i])
             for i in range(bottom, top, -1):
-                result.append(matrix[right][i])
+                result.append(matrix[i][left])
             
             left+=1
             right-=1
