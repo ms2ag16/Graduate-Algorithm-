@@ -22,5 +22,20 @@ class Solution(object):
         """
         result=[]
         if not intervals: 
+            return result
+        intervals.sort(key=lambda x: x.start)
+        result.append(intervals[0])
+        for interval in intervals[1:]:
+            prev=result[-1]
+            if prev.end>=interval.start:
+                prev.end=max(prev.end, interval.end)
+            else:
+                result.append(interval)
+        return result
+    
+if __name__ == "__main__":
+    intervals = Solution().merge([Interval(1, 3), Interval(2, 6), Interval(8, 10), Interval(15, 18)])
+    for interval in intervals:
+        print(interval)
         
         
