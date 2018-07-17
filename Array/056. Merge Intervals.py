@@ -21,6 +21,6 @@ class Solution(object):
         :rtype: List[Interval]
         """
         result=[]
-        if not intervals:
+        if not intervals: 
         
         
