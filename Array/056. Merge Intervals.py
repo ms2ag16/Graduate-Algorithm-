@@ -20,18 +20,20 @@ class Solution(object):
         :type intervals: List[Interval]
         :rtype: List[Interval]
         """
-        result=[]
-        if not intervals: 
-            return result
-        intervals.sort(key=lambda x: x.start)
-        result.append(intervals[0])
-        for interval in intervals[1:]:
-            prev=result[-1]
-            if prev.end>=interval.start:
-                prev.end=max(prev.end, interval.end)
+        if not intervals:
+            return []
+        intervals.sort(key=lambda x:x.start)
+        tail=0
+        for interval in intervals:
+            if interval.start>intervals[tail].end:
+                tail+=1
+                intervals[tail]=interval
             else:
-                result.append(interval)
-        return result
+                intervals[tail].end=max(intervals[tail].end, interval.end)
+        return intervals[:tail+1]
+         
+        
+
     
 if __name__ == "__main__":
     intervals = Solution().merge([Interval(1, 3), Interval(2, 6), Interval(8, 10), Interval(15, 18)])
