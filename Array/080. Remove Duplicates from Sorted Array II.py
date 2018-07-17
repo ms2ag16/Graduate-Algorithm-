@@ -17,3 +17,16 @@ class Solution(object):
         :type nums: List[int]
         :rtype: int
         """
+        start=0
+        for i in range(len(nums)):
+            if nums[start-2]!=nums[i] or i<2:
+                nums[start]=nums[i]
+                start+=1
+        return start
+    
+if __name__ == "__main__":
+    print Solution().removeDuplicates([0,0,1,1,1,1,2,3,3])
+
+            
+        
+        
