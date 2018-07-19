@@ -36,3 +36,8 @@ class Solution(object):
         while m<0:
             nums1[:n+1]=nums2[:n+1]
             
+if __name__=='__main__':
+    num1 = [1, 1, 2, 2, 4, 0, 0, 0, 0]
+
+    num2 = [0, 0, 2, 3]
+    Solution().merge(num1, 5, num2, 4)
