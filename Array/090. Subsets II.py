@@ -26,10 +26,7 @@ class Solution(object):
         temp=0
         nums.sort()
         for i in range(len(nums)):
-            if i>=1 and nums[i]==nums[i-1]:
-                start=temp
-            else:
-                start=0
+            start=temp if i>=1 and nums[i]==nums[i-1] else 0
             temp=len(result)
             for j in range(start,temp):
                 result.append(result[j]+[nums[i]])
