@@ -11,10 +11,11 @@ class Solution(object):
         :type rowIndex: int
         :rtype: List[int]
         """
-        result=[1]*(rowIndex+1)
-        for i in range(2, rowIndex+1):
-            for j in range(1,i):
-                result[i-j]+=result[i-j-1]
-        return result
+        res=[1]+[0]*rowIndex
+        for i in range(rowIndex):
+            result[0]=1
+            for j in range(i+1, 0, -1):
+                res[j]=res[j]+rest[j-1]
+        return res
 if __name__ == "__main__":
     print Solution().getRow(3)
