@@ -25,15 +25,15 @@ class Solution(object):
         """
         if not prices:
             return 0
-        low=high=prices[0]
         profit=0
-        for i in range(1,len(prices)):
-            if prices[i]>=prices[i-1]:
-                high=prices[i]
+        curPrice=prices[0]
+        
+        for x in prices[1:]:
+            if x>curPrice:
+                profit+=x-curPrice
+                curPrice=x
             else:
-              profit+=high-low
-              low=high=prices[i]
-        profit+=high-low
+                curPrice=x
         return profit
         
 if __name__ == "__main__":
