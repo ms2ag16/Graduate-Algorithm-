@@ -15,3 +15,23 @@ Input: [7,6,4,3,1]
 Output: 0
 Explanation: In this case, no transaction is done, i.e. max profit = 0.
 """
+class Solution(object):
+    def maxProfit(self, prices):
+        """
+        :type prices: List[int]
+        :rtype: int
+        """
+        if len(prices)<2:
+            return 0
+        min_price=prices[0]
+        max_profit=0
+        for price in prices:
+            if price<min_price:
+                min_price=price
+            if price-min_price>max_profit:
+                max_profit=price-min_price
+        return max_profit
+
+
+if __name__ == "__main__":
+    print Solution().maxProfit([2, 4, 6, 1, 3, 8, 3])
