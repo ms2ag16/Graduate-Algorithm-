@@ -19,4 +19,11 @@ class Solution(object):
         :type target: int
         :rtype: List[int]
         """
+        dict={}
+        for i, val in enumerate(numbers):
+            if target-val in dict:
+                return [dict[target-val]+1,i+1]
+            dict[val]=i
+      
+            
         
