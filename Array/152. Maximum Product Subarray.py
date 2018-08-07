@@ -13,3 +13,14 @@ class Solution(object):
         :type nums: List[int]
         :rtype: int
         """
+        maximum,minimum=nums[0],nums[0]
+        result=nums[0]
+        for num in nums[1:]:
+           maximum=max(num,maximum*num,minimum*num)
+           minimum=min(num,maximum*num,minimum*num)
+           result=max(maximum,result)
+        return result
+
+if __name__ == "__main__":
+    print Solution().maxProduct([2, 3, -2, 4])
+        
