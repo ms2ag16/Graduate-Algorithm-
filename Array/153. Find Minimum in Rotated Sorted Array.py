@@ -16,3 +16,15 @@ class Solution(object):
         """
         :type nums: List[int]
         :rtype
+        left=0
+        right=len(nums)-1
+        while left<right:
+            mid=(left+right)//2
+            if nums[mid]>nums[left]:
+                left=mid+1
+            else:
+                end=mid
+        return nums[left]
+        
+if __name__=="__main__":
+    print Solution().findMin([3,4,5,6,8,9])
