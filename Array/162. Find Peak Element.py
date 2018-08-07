@@ -13,3 +13,19 @@ Input: nums = [1,2,3,1]
 Output: 2
 Explanation: 3 is a peak element and your function should return the index number 2.
 """
+
+class Solution(object):
+    def findPeakElement(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: int
+        """
+        left=0
+        right=len(nums)-1
+        while left<right:
+          mid=(left+right)//2
+          if nums[mid]<nums[mid+1]:
+            left=mid+1
+          else:
+            right=mid
+        return left
