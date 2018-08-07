@@ -12,3 +12,14 @@ class Solution(object):
         :type postorder: List[int]
         :rtype: TreeNode
         """
+        self.inorder=indorder
+        self.postorder=postorder
+        return self._buildTree(0,len(inorder))
+    
+    def _buildTree(self,start,end):
+        if start<end:
+            root=TreeNode(self.postorder.pop())
+            index=self.inorder.index(root.val)
+            root.right=self._buildTree(index+1,end)
+            root.left=self._buildTree(start, index)
+            return root
