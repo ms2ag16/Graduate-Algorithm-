@@ -13,6 +13,8 @@ Given n = 3, there are a total of 5 unique BST's:
      3     2     1      1   3      2
     /     /       \                 \
    2     1         2                 3
+   
+   dynamic programming logic, think about the metric multiple
 """
 class Solution(object):
     def numTrees(self, n):
@@ -20,3 +22,13 @@ class Solution(object):
         :type n: int
         :rtype: int
         """
+        dp=[1 for _ in range(n+1)]
+        for i in range(2,n+1):
+            s=0
+            for j in range(i):
+                s+=dp[j]*dp[i-1-j]
+            dp[i]=s
+        return dp[-1]
+    
+if __name__ == "__main__":
+    assert Solution().numTrees(5) == 42
