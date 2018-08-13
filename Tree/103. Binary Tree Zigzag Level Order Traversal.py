@@ -31,6 +31,28 @@ class Solution(object):
         :rtype: List[List[int]]
         """
         tree=[]
-        if not root:
+        if not tree:
             return tree
+        curr_level=[root]
+        direction='L'
+        while curr_level:
+            level_list=[]
+            next_list=[]
+            for temp in curr_level:
+                level_list.append(temp.val)
+                if temp.left:
+                    next_level.append(temp.left)
+                if temp.next:
+                    next_level.append(temp.right)
+            if direction=='L':
+                tree.append(level_list)
+                direction='R'
+            else:
+                tree.append(level_list[::-1]
+                direction='L'
+            curr_level=next_level
+        return tree
+        
+                
+           
         
