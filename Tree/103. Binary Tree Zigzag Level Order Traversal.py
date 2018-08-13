@@ -53,6 +53,11 @@ class Solution(object):
             curr_level=next_level
         return tree
         
-                
-           
+if __name__ == "__main__":
+    n1 = TreeNode(1)
+    n2 = TreeNode(2)
+    n3 = TreeNode(3)
+    n1.right = n2
+    n2.left = n3
+    print  Solution().zigzagLevelOrder(n1)       
         
