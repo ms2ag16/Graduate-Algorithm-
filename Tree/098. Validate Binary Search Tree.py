@@ -45,11 +45,12 @@ class Solution(object):
             while curr:
                 stack.append(curr)
                 curr=curr.left
-
+            
             if stack:
                 curr=stack.pop()
-                if prev and curr.val <=prev.val:
+                if prev and curr.val<=prev.val:
                     return False
                 prev=curr
                 curr=curr.right
         return True
+    
