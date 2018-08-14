@@ -35,4 +35,11 @@ class Solution(object):
         queue=[(root,0)] # start from depth=0
         while len(queue):
             node, depth=queue.pop()
+            if node:
+                if len(res)<=depth:
+                    res.insert(0,[])
+                res[-(depth+1)].append(node.val)
+                queue.insert(0, (node.left, depth+1)
+                queue.insert(0, (node.right, depth+1)
+       return res
         
