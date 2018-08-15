@@ -15,6 +15,8 @@ Given binary tree [3,9,20,null,null,15,7],
     /  \
    15   7
 return its minimum depth = 2.
+
+BFS queue
 """
 
 class TreeNode(object):
@@ -32,12 +34,12 @@ class Solution(object):
         """
         if root is None:
             return 0
-        depth, curr_level=0,[root]
+        depth, curr_level=0, [root]
         while curr_level:
             depth+=1
             next_level=[]
             for node in curr_level:
-                left, right=node.left, node.right
+                left,right=node.left, node.right
                 if left is None and right is None:
                     return depth
                 if left:
@@ -46,7 +48,8 @@ class Solution(object):
                     next_level.append(right)
                 curr_level=next_level
         return depth
- 
+                    
+
 if __name__ == "__main__":
     n1 = TreeNode(0)
     n2 = TreeNode(-3)
