@@ -26,6 +26,9 @@ class TreeNode(object):
 
 class Solution(object):
     def maxDepth(self, root):
+        if root==None:
+            return 0
+        return max(self.maxDepth(root.left), self.maxDepth(root.right))+1
     
 
     def isBalanced(self, root):
@@ -33,6 +36,26 @@ class Solution(object):
         :type root: TreeNode
         :rtype: bool
         """
+        if root==None:
+            return True
+        if abs(self.maxDepth(root.left)-self.maxDepth(root.right))>1:
+            return False
+        return self.isBalanced(root.left) and self.isBalanced(root.right)
+
+
+if __name__ == "__main__":
+    n1 = TreeNode(0)
+    n2 = TreeNode(-3)
+    n3 = TreeNode(9)
+    n4 = TreeNode(-10)
+    n5 = TreeNode(5)
+    n1.right = n3
+    n1.left = n2
+    n2.left=n4
+    n3.left=n5
+    print  Solution().isBalanced(n1)
+            
+        
 
 
 
