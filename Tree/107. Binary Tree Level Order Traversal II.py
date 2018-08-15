@@ -43,3 +43,22 @@ class Solution(object):
                 queue.insert(0, (node.right, depth+1)
        return res
         
+class Solution2(object):
+    def levelOrderBottom(self, root):
+        """
+        :type root: TreeNode
+        :rtype: List[List[int]]
+        """
+        res=[]
+        stack=[(root,0)]
+        while len(stack)>0:
+            node,depth=stack.pop()
+            if node:
+                if len(res)<=depth:
+                    res.insert(0,[])
+                res[(-(depth+1))].append(node.val)
+                stack.append(node.right,depth+1)
+                stack.append(node.left,depth+1)
+        return res
+
+                             
