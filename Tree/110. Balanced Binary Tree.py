@@ -15,6 +15,9 @@ Given the following tree [3,9,20,null,null,15,7]:
     /  \
    15   7
 Return true.
+
+Solution1, calculate every depth for every node, it's a waste.
+
 """
 
 class TreeNode(object):
@@ -41,7 +44,19 @@ class Solution(object):
         if abs(self.maxDepth(root.left)-self.maxDepth(root.right))>1:
             return False
         return self.isBalanced(root.left) and self.isBalanced(root.right)
+    
+class Solution2(object):
+    def maxDepth(self, root):
+        if root==None:
+            return 0
+        return max(self.maxDepth(root.left), self.maxDepth(root.right))+1
+    
 
+    def isBalanced(self, root):
+        """
+        :type root: TreeNode
+        :rtype: bool
+        """
 
 if __name__ == "__main__":
     n1 = TreeNode(0)
@@ -55,19 +70,4 @@ if __name__ == "__main__":
     n3.left=n5
     print  Solution().isBalanced(n1)
             
-        
 
-
-
-
-if __name__ == "__main__":
-    n1 = TreeNode(0)
-    n2 = TreeNode(-3)
-    n3 = TreeNode(9)
-    n4 = TreeNode(-10)
-    n5 = TreeNode(5)
-    n1.right = n3
-    n1.left = n2
-    n2.left=n4
-    n3.left=n5
-    print  Solution().isBalanced(n1)
