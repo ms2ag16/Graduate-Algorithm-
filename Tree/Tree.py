@@ -14,4 +14,5 @@ class Tree(object):
     if self.root.val==-1:
       self.root=node
       self.myQueue.append(self.root)
+    
       
