@@ -36,3 +36,14 @@ class Solution(object):
         :type root: TreeNode
         :rtype: void Do not return anything, modify root in-place instead.
         """
+        while root:
+            if root.left:
+                pre=root.left
+                while pre.right:
+                    pre=pre.right
+                if root.right:
+                    pre.right=root.right
+                root.right=root.left
+                root.left=None
+            root=root.right
+            
