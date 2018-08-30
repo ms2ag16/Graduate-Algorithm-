@@ -33,3 +33,31 @@ After calling your function, the tree should look like:
 4->5->6->7 -> NULL
 """
 
+class TreeNode(object):
+     def __init__(self, x):
+        self.val = x
+        self.left = None
+        self.right = None
+        self.next=None
+
+
+class Solution:
+    # @param root, a tree link node
+    # @return nothing
+    def connect(self, root):
+        if not root:
+          return
+        curr_level=[root]
+        while curr_level:
+            next_level=[]
+            for node in curr_level:
+                if node.left:
+                    next_level.append(node.left)
+                if node.right:
+                    next_level.append(node.right)
+            for i in range(len(next_level)-1):
+                next_level[i].next=next_level[i+1]
+            curr_level=next_level
+            
+            
+        
