@@ -45,6 +45,7 @@ class Solution:
     # @param root, a tree link node
     # @return nothing
     def connect(self, root):
+      """ BFS """
         if not root:
           return
         curr_level=[root]
@@ -58,6 +59,17 @@ class Solution:
             for i in range(len(next_level)-1):
                 next_level[i].next=next_level[i+1]
             curr_level=next_level
+            
+    def connect2(self, root):
+      """ RECURSIVE """
+        if not root:
+            return
+        if root.right:
+            root.left.next=root.right
+            if root.next:
+                root.right.next=root.next.left
+        self.connect(root.left)
+        self.connect(root.right)
             
             
         
