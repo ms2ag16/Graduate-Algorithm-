@@ -41,3 +41,9 @@ class Solution(object):
         :type root: TreeNode
         :rtype: int
         """
+        """ recursive ""
+        return self.addSum(root, 0)
+        
+    def addSum(self,root, preSum):
+        
+    
