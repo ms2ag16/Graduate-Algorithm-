@@ -45,5 +45,24 @@ class Solution(object):
         return self.addSum(root, 0)
         
     def addSum(self,root, preSum):
+        if root is None:
+            return 0
+        preSum=preSum*10 + root.val
+        if root.left==None and root.right==None:
+            return self.addSum(root.left, preSum) + self.addSum(root.right, preSum)
+
+if __name__=="__main__":
+    n1=TreeNode(1)
+    n2=TreeNode(2)
+    n3=TreeNode(3)
+    n4=TreeNode(4)
+    n5=TreeNode(5)
+    n6=TreeNode(6)
+    n1.left=n2
+    n1.right=n5
+    n2.left=n3
+    n2.right=n4
+    n5.right=n6
+    print Solution().sumNumbers(n1)
         
     
