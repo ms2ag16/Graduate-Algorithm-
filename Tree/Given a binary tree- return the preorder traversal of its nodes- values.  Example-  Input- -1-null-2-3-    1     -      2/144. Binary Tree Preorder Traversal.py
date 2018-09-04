@@ -19,7 +19,21 @@ class TreeNode(object):
          self.left = None
          self.right = None
 
-class Solution:
+class Solution(object):
+    def preorderTraversal(self, root):
+        """
+        :type root: TreeNode
+        :rtype: List[int]
+        """
+        stack=[root]
+        res=[]
+        while stack:
+            node=stack.pop()
+            if node:
+                res.append(node.val)
+                stack.append(node.right)
+                stack.append(node.left)
+        return res
 
 
 if __name__=="__main__":
