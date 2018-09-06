@@ -26,6 +26,7 @@ class Solution(object):
         :type s: str
         :rtype: int
         """
+        """ DP concept"""
         start=maxlength=0
         usedChar={}
         for i in range(len(s)):
@@ -38,4 +39,6 @@ class Solution(object):
 
         return maxlength
 
-        
+ if __name__=="__main__":
+    print Solution().lengthOfLongestSubstring("pwwkew")
+       
