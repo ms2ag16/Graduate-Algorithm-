@@ -42,7 +42,7 @@ class Solution(object):
             if sumNeed in sumsIndex:
               for index in sumsIndex[sumNeed]:
                 if index[0]>j:
-                  res.add(tuple(sorted(nums[i],nums[j],nums[index[0]], nums[index[1]])))
+                  res.add(tuple(sorted([nums[i],nums[j],nums[index[0]], nums[index[1]]])))
         
         return (res=map(list, res))
               
