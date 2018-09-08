@@ -29,7 +29,7 @@ class Solution(object):
         sumsIndex={}
         
         """ Get all two elements sum and indexes map."""
-        for i range(len(nums)):
+        for i in range(len(nums)):
           for j in range(i+1, len(nums)):
             if nums[i]+nums[j] in sumsIndex:
               sumsIndex[nums[i]+nums[j]].append((i,j))
