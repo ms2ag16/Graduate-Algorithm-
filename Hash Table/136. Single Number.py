@@ -14,10 +14,14 @@ Example 2:
 Input: [4,1,2,1,2]
 Output: 4
 """
-
+""" 异或操作"""
 class Solution(object):
     def singleNumber(self, nums):
         """
         :type nums: List[int]
         :rtype: int
         """
+        result=nums[0]
+        for i in nums[1:]:
+            result^=i
+        return result
