@@ -43,10 +43,7 @@ class Solution2(object):
             map[target]=[v]
           else:
             map[target].append(v)
-        res=[]
-        for value in map.values():
-          res+=[sorted(value)]
-        return res
+        return map.values()
       
         
 if __name__ == "__main__":
