@@ -15,3 +15,7 @@ class Solution(object):
         :type head: RandomListNode
         :rtype: RandomListNode
         """
+        visited=dict()
+          
+          
+        
