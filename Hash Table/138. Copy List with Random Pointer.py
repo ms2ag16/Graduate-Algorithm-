@@ -16,6 +16,15 @@ class Solution(object):
         :rtype: RandomListNode
         """
         visited=dict()
-          
+        m=n=head
+        while m:
+            visited[m]=RandomListNode(m.label)
+            m=m.next
+        while n:
+            visited[n].next=visited.get(n.next)
+            visited[n].random=visited.get(n.random)
+            n=n.next
+        return visited.get(head)
+    
           
         
