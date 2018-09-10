@@ -26,7 +26,7 @@ Input:
 ]
 Output: true
 
-"""036. Valid Sudoku
+"""
 
 
 
