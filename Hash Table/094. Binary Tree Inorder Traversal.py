@@ -23,3 +23,21 @@ class TreeNode(object):
 
 class Solution(object):
     def inorderTraversal(self, root):
+         res=[]
+         p=root
+         stack=[]
+         while p or stack:
+            stack.append(p)
+            p=p.left
+            if stack:
+               p=stack.pop()
+               res.append(p.val)
+               p=p.right
+               
+if __name__ == "__main__":
+    n1 = TreeNode(1)
+    n2 = TreeNode(2)
+    n3 = TreeNode(3)
+    n1.right = n2
+    n2.left = n3
+    assert Solution().inorderTraversal(n1) == [1, 3, 2]            
