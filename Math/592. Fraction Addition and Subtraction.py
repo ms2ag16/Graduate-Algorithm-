@@ -36,16 +36,16 @@ class Solution(object):
             g = gcd(n, lcm)
             return str(n / g) + "/" + str(lcm / g)
 
-        print "at first expression=%s"%expression
+        #print "at first expression=%s"%expression
         expression += "+"
-        print "after += expresssion=%s"%expression
+        #print "after += expresssion=%s"%expression
         ans = "0/1"
         start = 0
         for i in range(1,len(expression)):
-            print "expression[%d]="%i,"%s"%expression[i]
+            #print "expression[%d]="%i,"%s"%expression[i]
             if expression[i] in ["+", "-"]:
                 num = expression[start:i]
-                print "num=%s"%num
+               # print "num=%s"%num
                 ans = add(ans, num)
                 start = i
         return ans if ans[0] != "+" else ans[1:]
