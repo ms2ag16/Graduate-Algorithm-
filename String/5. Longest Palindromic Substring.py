@@ -14,6 +14,20 @@ class Solution(object):
         :type s: str
         :rtype: str
         """
+        """ 思路是 如果string[i:j] 首尾相同，则maxl=string[i-1:j+1]的longestpalindrom+2
+         如果string[i:j]首尾不相同， 则maxl=max(string[i-1:j], string[i:j-1]"""
+        n=len(s)
+        start=maxl=0
+        for i in range(n):
+            if i-maxl>=1 and s[i-maxl-1: i+1]==s[i-maxl-1:i+1][::-1]:
+                start=i-maxl-1
+                maxl+=2
+                continue
+            if i-maxl>=0 and s[i-maxl:i+1]==s[i-maxl:i+1][::-1]:
+                start=i-maxl
+                maxl+=1
+        return s[start:start+maxl]
+                
         
         
     def longestPalindrome_wrong method(self, s):
