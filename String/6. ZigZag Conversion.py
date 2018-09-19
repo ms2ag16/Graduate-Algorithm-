@@ -32,3 +32,17 @@ class Solution(object):
         :type numRows: int
         :rtype: str
         """
+        # 其实最终输出 按行输出就好！ 那么只需要判断 到达row【numRow-1】需要换方向scan character。判断标准currentLine%（numRow-1）==0
+        # ！=0 currentLine+1； ==0， currentLine-1，回到上一行，接着写，即换方向
+        curLine=0
+        step=-1
+        n=len(s)
+        if(numRows>=n) or numRows<=1:
+            return s
+        res=['']*numRows
+        for c in s:
+            if curLine%(numRows-1)==0:
+                step=-step
+            res[curLine]+=c  # string can +=, cannot append
+            curLine+=step
+        return ''.join(res) # format  '.join(iterable)
