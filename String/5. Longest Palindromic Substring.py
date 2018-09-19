@@ -9,7 +9,7 @@ Note: "aba" is also a valid answer.
 """
 
 class Solution(object):
-    def longestPalindrome(self, s):
+    def longestPalindrome_wrong method(self, s):
         """
         :type s: str
         :rtype: str
