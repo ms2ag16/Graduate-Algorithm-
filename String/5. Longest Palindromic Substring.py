@@ -30,7 +30,8 @@ class Solution(object):
                 else:
                     res[i][j]=0
 
-        return trans_s, maxl
+        return trans_s, maxl """ trans后求最长common substring 的方法是有问题的，caabdaac, 对与本身有对称的case trans后，caa和caa common， 但不是回字文"""
+    
 
 if __name__=="__main__":
     print Solution().longestPalindrome("babad")
