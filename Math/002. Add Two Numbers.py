@@ -26,7 +26,7 @@ class Solution(object):
         :rtype: ListNode
         """
         def addNum(n1, n2):
-            if not n1 or not n2:
+            if not n1 and not n2:
                 return 0
             if not n2:
                 return n1.val
