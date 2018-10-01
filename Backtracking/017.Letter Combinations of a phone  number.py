@@ -13,7 +13,7 @@ Note:
 
 Although the above answer is in lexicographical order, your answer could be in any order you want.
 """
-
+"backtracking, using stack"
 class Solution(object):
     letters={'2':['a','b','c'], '3':['d','e','f'], '4':['g','h','i'],
             '5':['j','k','l'], '6':['m','n','o'], '7':['p','q','r','s'],
@@ -24,3 +24,13 @@ class Solution(object):
         :type digits: str
         :rtype: List[str]
         """
+        res=[]
+        def dfs(digits, string, res):
+            if not digits:
+                return res.append(string)    
+            for letter in self.letters[digits[0]]:
+                dfs(digits[1:], string+letter, res)
+        dfs(digits, "", res)
+        return res 
+        
+        
