@@ -23,3 +23,20 @@ class Solution(object):
         :type target: int
         :rtype: List[List[int]]
         """
+        res=[]
+        def dfs(candidates, target, current, res):
+            if sum(current)==target:
+                return res.append(current)
+            if sum(current)> target:
+                return
+            else:
+                for i, v in enumerate(candidates):
+                    dfs(candidates[i:], target, current+[v], res)
+        candidates.sort()
+        dfs(candidates, target, [], res)
+        return res
+
+
+
+if __name__=="__main__":
+    print Solution().combinationSum(candidates = [2,3,6,7], target = 7)
