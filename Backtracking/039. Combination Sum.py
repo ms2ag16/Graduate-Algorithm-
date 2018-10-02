@@ -35,6 +35,31 @@ class Solution(object):
         candidates.sort()
         dfs(candidates, target, [], res)
         return res
+      
+class Solution(object):
+    def combinationSum(self, candidates, target):
+        """
+        :type candidates: List[int]
+        :type target: int
+        :rtype: List[List[int]]
+        """
+        candidates=sorted(candidates)
+        res=[]
+        self.dfs(candidates, target, 0, [], res)
+        return  res
+
+    def dfs(self, candidates, target, index, current, res):
+        for i in range(index, len(candidates)):
+            if candidates[i]==target:
+                current.append(candidates[i])
+                res.append(current)
+                return
+            if candidates[i]>target:
+                return
+            else:
+                self.dfs(candidates, target-candidates[i], i, current+[candidates[i]], res)
+                """ use i instead of i+1, since allow use multiple times of each number in candidates """
+
 
 
 
