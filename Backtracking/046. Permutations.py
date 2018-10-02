@@ -21,4 +21,16 @@ class Solution(object):
         :type nums: List[int]
         :rtype: List[List[int]]
         """
+        res=[]
+        
+        def dfs(nums, current, res):
+          if not nums：
+            res.append(current)
+          else:
+            for  i in range(len(nums)):
+              dfs(nums[:i]+nums[i+1:], current+[nums[i]], res)
+       
+        dfs(nums, [], res)
+        return res
+        
         
