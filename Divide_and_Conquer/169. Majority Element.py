@@ -21,6 +21,26 @@ class Solution(object):
         :type nums: List[int]
         :rtype:
         """
+        left=0
+        right=len(nums)-1
+        if left==right:
+            return nums[left]
+        mid=(left+right)//2
+        left_major=self.majorityElement(nums[:mid+1])
+        right_major=self.majorityElement(nums[mid+1:])
+
+        if left_major==right_major:
+            return left_major
+
+        left_count=right_count=0
+        for i in range(len(nums)):
+            if nums[i]==left_major:
+                left_count+=1
+        for j in range(len(nums)):
+            if nums[j]==right_major:
+                right_count+=1
+
+        return left_major if left_count>right_count else right_major
         
 
 
