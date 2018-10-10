@@ -24,13 +24,37 @@ class Solution(object):
         
         
 class Solution(object):
-       def findKthLargest(self, nums, k):
+    def findKthLargest(self, nums, k):
         """
         :type nums: List[int]
         :type k: int
         :rtype: int
         """
-        nums.sort()
-        length=len(nums)
-        return nums[length-k]
+        sorted_nums = self.mergeSort(nums)
+        return sorted_nums[len(nums)-k]
+
+    def mergeSort(self, nums):
+        if len(nums)==1:
+            return nums
+        else:
+            leftList=self.mergeSort(nums[:len(nums)/2])
+            rightList=self.mergeSort(nums[len(nums)/2:])
+            return self.merge(leftList,rightList)
+
+    def merge(self, leftList, rightList):
+        result, i, j= [], 0,0
+        for k in range(len(leftList)+len(rightList)):
+            if i<len(leftList) and j <len(rightList):
+                if leftList[i]<=rightList[j]:
+                    result.append(leftList[i])
+                    i+=1
+                else:
+                    result.append(rightList[j])
+                    j+=1
+            else:
+                result.append(leftList[i] if i<len(leftList) else rightList[j])
+                i+=1
+                j+=1
+        return  result
+
         
