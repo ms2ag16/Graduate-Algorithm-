@@ -12,3 +12,10 @@ Input: "ccaabbb"
 Output: 5
 Explanation: t is "aabbb" which its length is 5.
 """
+class Solution(object):
+    def lengthOfLongestSubstringTwoDistinct(self, s):
+        """
+        :type s: str
+        :rtype: int
+        """
+        
