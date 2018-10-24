@@ -1,4 +1,5 @@
-# BFS Iterative Solution
+# DFS Iterative Solution, Use deque, but actually it's DFS == always explore the latest append Node
+# Can use Stack[], but speed is less than use deque library.
 
 class TreeNode(object):
      def __init__(self, x):
