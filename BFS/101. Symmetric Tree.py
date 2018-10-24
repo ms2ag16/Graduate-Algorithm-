@@ -28,5 +28,5 @@ class Solution(object):
             lQueue.append(left.right)
             rQueue.append(right.right)
             rQueue.append(right.left)
-        return len(lQueue)==len(rQueue)
+        return True
     
