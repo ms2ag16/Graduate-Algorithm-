@@ -22,37 +22,33 @@ class TreeNode(object):
         self.val = x
         self.left = None
         self.right = None
-
-
+        
+        """ Using BFS idea to loop over the current level""' 
 class Solution(object):
     def zigzagLevelOrder(self, root):
         """
         :type root: TreeNode
         :rtype: List[List[int]]
         """
-        tree=[]
-        if not tree:
-            return tree
-        curr_level=[root]
-        direction='L'
-        while curr_level:
-            level_list=[]
-            next_list=[]
-            for temp in curr_level:
-                level_list.append(temp.val)
-                if temp.left:
-                    next_level.append(temp.left)
-                if temp.next:
-                    next_level.append(temp.right)
-            if direction=='L':
-                tree.append(level_list)
-                direction='R'
-            else:
-                tree.append(level_list[::-1]
-                direction='L'
-            curr_level=next_level
-        return tree
         
+        if not root:
+            return []
+        from collections import deque
+        tree, tQueue, curr, flag=[],deque([root]),[],1
+        while tQueue:
+            for i in xrange(len(tQueue)):
+                # set it to be BFS, go over all the nodes in curr_level
+                node=tQueue.popleft()
+                curr+=[node.val]
+                if node.left:
+                    tQueue.append(node.left)
+                if node.right:
+                    tQueue.append(node.right)
+            tree+=[curr[::flag]]
+            flag*=-1
+            curr=[]
+        return tree
+            
 if __name__ == "__main__":
     n1 = TreeNode(1)
     n2 = TreeNode(2)
