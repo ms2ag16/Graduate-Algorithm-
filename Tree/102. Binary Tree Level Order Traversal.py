@@ -29,22 +29,19 @@ class Solution(object):
         :type root: TreeNode
         :rtype: List[List[int]]
         """
-        result=[]
         if not root:
-            return result
-        curr_level=[root]
-        while curr_level:
-            level_result=[]
-            next_level=[]
-            for temp in curr_level:
-                level_result.append(temp.val)
-                if temp.left:
-                    next_level.append(temp.left)
-                if temp.right:
-                    next_level.append(temp.right)
-            result.append(level_result)
-            curr_level=next_level
-        return result
+            return []
+        from collections import deque
+        tree, bfs, curr=[],deque([root]),[]
+        while bfs:
+            for i in xrange(len(bfs)):
+                node=bfs.popleft()
+                curr.append(node.val)
+                if node.left: bfs.append(node.left)
+                if node.right: bfs.append(node.right)
+            tree+=[curr]
+            curr=[]
+        return tree
 
 
 if __name__ == "__main__":
