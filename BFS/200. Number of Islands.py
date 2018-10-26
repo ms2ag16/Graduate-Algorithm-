@@ -1,3 +1,7 @@
+"""
+similar idea as 130. sorround islands
+"""
+
 from collections import deque
 class Solution(object):
 
