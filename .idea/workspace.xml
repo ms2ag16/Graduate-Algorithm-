@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="baa2848d-24de-4e09-a385-4abc660d4091" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Priority_Queues/HeapPriorityQueue.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Priority_Queues/SortedPriorityQueue.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BFS/Dijkstra's Shortest Path.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,78 +15,46 @@
     <session id="-420876491">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="1" />
           <entry key="project.open.time.0" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.open.time.4" value="1" />
+          <entry key="project.opened" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="py" value="9" />
+          <entry key="py" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Python" value="9" />
+          <entry key="Python" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="7344" />
+          <entry key="py" value="9790" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="7344" />
+          <entry key="Python" value="9790" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Priority_Queues/UnsortedPriorityQueue.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="367">
-              <caret line="27" column="23" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="23" />
-              <folding>
-                <marker date="1541266223059" expanded="true" signature="60:71" ph="..." />
-                <marker date="1541266223059" expanded="true" signature="118:123" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Priority_Queues/SortedPriorityQueue.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="585">
-              <caret line="39" column="4" lean-forward="true" selection-start-line="39" selection-start-column="4" selection-end-line="39" selection-end-column="4" />
-              <folding>
-                <marker date="1541266717427" expanded="true" signature="94:99" ph="..." />
-                <marker date="1541266717427" expanded="true" signature="918:922" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Priority_Queues/HeapPriorityQueue.py">
+        <entry file="file://$PROJECT_DIR$/BFS/Dijkstra's Shortest Path.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="31" column="24" selection-start-line="31" selection-start-column="24" selection-end-line="31" selection-end-column="24" />
+            <state relative-caret-position="15">
+              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
               <folding>
-                <marker date="1541271226696" expanded="true" signature="91:96" ph="..." />
-                <marker date="1541271226696" expanded="true" signature="344:373" ph="..." />
+                <marker date="1541973529674" expanded="true" signature="13:14" ph="..." />
+                <marker date="1541973529674" expanded="true" signature="42:44" ph="..." />
+                <marker date="1541973529674" expanded="true" signature="813:815" ph="..." />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Priority_Queues/PriorityQueueBase.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="29" lean-forward="true" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -115,12 +82,13 @@
         <option value="$PROJECT_DIR$/Priority_Queues/UnsortedPriorityQueue.py" />
         <option value="$PROJECT_DIR$/Priority_Queues/SortedPriorityQueue.py" />
         <option value="$PROJECT_DIR$/Priority_Queues/HeapPriorityQueue.py" />
+        <option value="$PROJECT_DIR$/BFS/Dijkstra's Shortest Path.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="98" />
-    <option name="y" value="25" />
+    <option name="x" value="124" />
+    <option name="y" value="63" />
     <option name="width" value="1061" />
     <option name="height" value="775" />
   </component>
@@ -135,6 +103,11 @@
             <path>
               <item name="Graduate-Algorithm-" type="b2602c69:ProjectViewProjectNode" />
               <item name="Graduate-Algorithm-" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Graduate-Algorithm-" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Graduate-Algorithm-" type="462c0819:PsiDirectoryNode" />
+              <item name="BFS" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Graduate-Algorithm-" type="b2602c69:ProjectViewProjectNode" />
@@ -163,6 +136,34 @@
       </list>
     </option>
   </component>
+  <component name="RunManager">
+    <configuration name="Dijkstra's Shortest Path" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Graduate-Algorithm-" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/BFS" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/BFS/Dijkstra's Shortest Path.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.Dijkstra's Shortest Path" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -177,23 +178,23 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="98" y="25" width="1061" height="775" extended-state="0" />
+    <frame x="124" y="63" width="1061" height="775" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Python Console" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.329429" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Python Console" order="10" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -214,9 +215,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
-          <folding>
-            <marker date="1541260885589" expanded="true" signature="11:2845" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -227,20 +225,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Priority Queues/PriorityQueueBase.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="4" lean-forward="true" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Priority Queues/UnsortedPriorityQueue.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Priority Queues/PriorityQueueBase.py" />
+    <entry file="file://$PROJECT_DIR$/Priority Queues/UnsortedPriorityQueue.py" />
     <entry file="file://$PROJECT_DIR$/Priority_Queues/PriorityQueueBase.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
@@ -248,14 +234,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Priority_Queues/UnsortedPriorityQueue.py">
+    <entry file="file://$PROJECT_DIR$/Priority_Queues/HeapPriorityQueue.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="367">
-          <caret line="27" column="23" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="23" />
-          <folding>
-            <marker date="1541266223059" expanded="true" signature="60:71" ph="..." />
-            <marker date="1541266223059" expanded="true" signature="118:123" ph="..." />
-          </folding>
+        <state relative-caret-position="190">
+          <caret line="31" column="24" selection-start-line="31" selection-start-column="24" selection-end-line="31" selection-end-column="24" />
         </state>
       </provider>
     </entry>
@@ -263,20 +245,24 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="585">
           <caret line="39" column="4" lean-forward="true" selection-start-line="39" selection-start-column="4" selection-end-line="39" selection-end-column="4" />
-          <folding>
-            <marker date="1541266717427" expanded="true" signature="94:99" ph="..." />
-            <marker date="1541266717427" expanded="true" signature="918:922" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Priority_Queues/HeapPriorityQueue.py">
+    <entry file="file://$PROJECT_DIR$/Priority_Queues/UnsortedPriorityQueue.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="31" column="24" selection-start-line="31" selection-start-column="24" selection-end-line="31" selection-end-column="24" />
+        <state relative-caret-position="367">
+          <caret line="27" column="23" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BFS/Dijkstra's Shortest Path.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
           <folding>
-            <marker date="1541271226696" expanded="true" signature="91:96" ph="..." />
-            <marker date="1541271226696" expanded="true" signature="344:373" ph="..." />
+            <marker date="1541973529674" expanded="true" signature="13:14" ph="..." />
+            <marker date="1541973529674" expanded="true" signature="42:44" ph="..." />
+            <marker date="1541973529674" expanded="true" signature="813:815" ph="..." />
           </folding>
         </state>
       </provider>
