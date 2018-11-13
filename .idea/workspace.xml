@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="baa2848d-24de-4e09-a385-4abc660d4091" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/BFS/Dijkstra's Shortest Path.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -15,45 +14,44 @@
     <session id="-420876491">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="2" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.4" value="1" />
-          <entry key="project.opened" value="2" />
+          <entry key="project.open.time.7" value="1" />
+          <entry key="project.opened" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="py" value="10" />
+          <entry key="py" value="11" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Python" value="10" />
+          <entry key="Python" value="11" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="9790" />
+          <entry key="py" value="10159" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="9790" />
+          <entry key="Python" value="10159" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/BFS/Dijkstra's Shortest Path.py">
+        <entry file="file://$PROJECT_DIR$/Linked List/347. Top k Frequent Elements.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+            <state relative-caret-position="261">
+              <caret line="18" column="9" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
               <folding>
-                <marker date="1541973529674" expanded="true" signature="13:14" ph="..." />
-                <marker date="1541973529674" expanded="true" signature="42:44" ph="..." />
-                <marker date="1541973529674" expanded="true" signature="813:815" ph="..." />
+                <element signature="e#0#35#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -83,12 +81,13 @@
         <option value="$PROJECT_DIR$/Priority_Queues/SortedPriorityQueue.py" />
         <option value="$PROJECT_DIR$/Priority_Queues/HeapPriorityQueue.py" />
         <option value="$PROJECT_DIR$/BFS/Dijkstra's Shortest Path.py" />
+        <option value="$PROJECT_DIR$/Linked List/347. Top k Frequent Elements.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="124" />
-    <option name="y" value="63" />
+    <option name="x" value="142" />
+    <option name="y" value="106" />
     <option name="width" value="1061" />
     <option name="height" value="775" />
   </component>
@@ -108,6 +107,11 @@
               <item name="Graduate-Algorithm-" type="b2602c69:ProjectViewProjectNode" />
               <item name="Graduate-Algorithm-" type="462c0819:PsiDirectoryNode" />
               <item name="BFS" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Graduate-Algorithm-" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Graduate-Algorithm-" type="462c0819:PsiDirectoryNode" />
+              <item name="Linked List" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Graduate-Algorithm-" type="b2602c69:ProjectViewProjectNode" />
@@ -136,7 +140,28 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.347. Top k Frequent Elements">
+    <configuration name="347. Top k Frequent Elements" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Graduate-Algorithm-" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Linked List" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Linked List/347. Top k Frequent Elements.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="Dijkstra's Shortest Path" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Graduate-Algorithm-" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -158,8 +183,13 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Python.Dijkstra's Shortest Path" />
+      <item itemvalue="Python.347. Top k Frequent Elements" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.347. Top k Frequent Elements" />
         <item itemvalue="Python.Dijkstra's Shortest Path" />
       </list>
     </recent_temporary>
@@ -178,7 +208,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="124" y="63" width="1061" height="775" extended-state="0" />
+    <frame x="142" y="106" width="1061" height="775" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
@@ -258,11 +288,21 @@
     <entry file="file://$PROJECT_DIR$/BFS/Dijkstra's Shortest Path.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
           <folding>
             <marker date="1541973529674" expanded="true" signature="13:14" ph="..." />
             <marker date="1541973529674" expanded="true" signature="42:44" ph="..." />
             <marker date="1541973529674" expanded="true" signature="813:815" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Linked List/347. Top k Frequent Elements.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="18" column="9" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
           </folding>
         </state>
       </provider>
