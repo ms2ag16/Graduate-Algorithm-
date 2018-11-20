@@ -21,7 +21,22 @@ class Solution(object):
         :type nums: List[int]
         :rtype: int
         """
-        result=nums[0]
-        for i in nums[1:]:
-            result^=i
-        return result
+        count=dict()
+        for num in nums:
+            if num in count:
+                count[num]+=1
+            else:
+                count[num]=1
+        for num in nums:
+            if count[num]==1:
+                return num
+
+class Solution1(object):
+    def singleNumber(self, nums):
+        nums_seen = set()
+        for i in nums:
+            if i in nums_seen:
+                nums_seen.remove(i)
+            else:
+                nums_seen.add(i)
+        return nums_seen.pop()
