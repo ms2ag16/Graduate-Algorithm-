@@ -5,6 +5,7 @@ Input: 1->2->3->4->5->NULL
 Output: 5->4->3->2->1->NULL
 """
 
+""" recursive """ 
 # Definition for singly-linked list.
 class ListNode(object):
     def __init__(self, x):
@@ -16,25 +17,36 @@ class ListNode(object):
         if self.next:
             self.next.myprint()
 
-
-class Solution(object):
+class Solution:
     def reverseList(self, head):
         """
         :type head: ListNode
         :rtype: ListNode
         """
-        p=head
-        newList=[]
-        while p:
-            newList.insert(0,p.val)
-            p=p.next
-        p=head
-        for v in newList:
-            p.val=v
-            p=p.next
-        return head
-
-
+        return self.reverse(head, None)
+    
+    def reverse(node, prev=None):
+        if not node:
+            return prev
+        curr=node.next
+        node.next=prev
+        return self.reverse(curr, node)
+        
+""" iterative """
+class Solution:
+    def reverseList(self, head):
+        """
+        :type head: ListNode
+        :rtype: ListNode
+        """
+        prev=None
+        while head:
+            curr=head
+            head=head.next
+            curr.next=prev
+            prev=curr
+        return prev
+        
 
 if __name__ == "__main__":
     l1 = ListNode(1)
