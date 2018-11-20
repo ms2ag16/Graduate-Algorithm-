@@ -24,5 +24,14 @@ class Solution:
         :type root: TreeNode
         :rtype: int
         """
+        self.diameter=0
+        self.dfs(root)
+        return self.diameter
+
     def dfs(self, root):
+        if not root:
+            return -1
+        left, right=self.dfs(root.left)+1, self.dfs(root.right)+1
+        self.diameter=max(self.diameter, left+right)
+        return max(left+right)
     
