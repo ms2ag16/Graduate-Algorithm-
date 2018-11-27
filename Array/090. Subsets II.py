@@ -22,15 +22,20 @@ class Solution(object):
         :type nums: List[int]
         :rtype: List[List[int]]
         """
-        result=[[]]
-        temp=0
         nums.sort()
-        for i in range(len(nums)):
-            start=temp if i>=1 and nums[i]==nums[i-1] else 0
-            temp=len(result)
-            for j in range(start,temp):
-                result.append(result[j]+[nums[i]])
-        return result
+        res=[]
+        return self.dfs(0,[],nums,res)
+
+    def dfs(self, start, path, nums,res):
+        res.append(path)
+        for i in range(start,len(nums)):
+            if i!=start and nums[i]==nums[i-1]:
+                continue
+            self.dfs(i+1, path+[nums[i]], nums, res)
+        return res
+
+
+
 
 if __name__=='__main__':
-    print  Solution().subsetsWithDup([1,2,2])
+    print  (Solution().subsetsWithDup([1,2,2]))

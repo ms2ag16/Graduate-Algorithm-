@@ -2,15 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="baa2848d-24de-4e09-a385-4abc660d4091" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Array/896. Monotonic Array.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Binary Search/852. Peak Index in a Mountain Array.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DFS/339. Nested List Weight Sum.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Queue/346. Moving Average from Data Stream.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Recursion/226. Invert Binary Tree.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Set/266. Palindrome Permitation.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/String/824. Goat Latin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FB/015. 3 Sum.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FB/056. Merge Intervals.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FB/093. Restore IP Address.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FB/243. Shortest Word Distance.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FB/283. Move Zeros.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FB/Neighbor Nodes.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FB/avg length of words in a sentence.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FB/●&#9;Count the number of words in a sentence.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Recursion/494. Target Sum.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hash Table/136. Single Number.py" beforeDir="false" afterPath="$PROJECT_DIR$/Hash Table/136. Single Number.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Array/090. Subsets II.py" beforeDir="false" afterPath="$PROJECT_DIR$/Array/090. Subsets II.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FB/020. Valid Parenthesis.py" beforeDir="false" afterPath="$PROJECT_DIR$/FB/020. Valid Parenthesis.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FB/468. Validate IP Address.py" beforeDir="false" afterPath="$PROJECT_DIR$/FB/468. Validate IP Address.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -26,57 +30,66 @@
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.3" value="2" />
           <entry key="project.open.time.4" value="2" />
-          <entry key="project.open.time.7" value="1" />
-          <entry key="project.opened" value="6" />
+          <entry key="project.open.time.7" value="2" />
+          <entry key="project.opened" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="py" value="22" />
+          <entry key="py" value="37" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Python" value="22" />
+          <entry key="Python" value="37" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="11752" />
+          <entry key="py" value="16458" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="11752" />
+          <entry key="Python" value="16458" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Set/266. Palindrome Permitation.py">
+        <entry file="file://$PROJECT_DIR$/FB/283. Move Zeros.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+            <state relative-caret-position="225">
+              <caret line="15" selection-start-line="15" selection-end-line="15" selection-end-column="24" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/String/824. Goat Latin.py">
+        <entry file="file://$PROJECT_DIR$/Recursion/494. Target Sum.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="322">
-              <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
+            <state relative-caret-position="314">
+              <caret line="21" column="1" selection-start-line="21" selection-start-column="1" selection-end-line="22" selection-end-column="60" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Array/090. Subsets II.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="263">
+              <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Array/896. Monotonic Array.py">
+        <entry file="file://$PROJECT_DIR$/FB/Neighbor Nodes.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="34" column="55" selection-start-line="34" selection-start-column="55" selection-end-line="34" selection-end-column="55" />
+            <state relative-caret-position="135">
+              <caret line="9" column="28" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -89,6 +102,17 @@
         <option value="Python Script" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>`</find>
+    </findStrings>
+    <replaceStrings>
+      <replace />
+    </replaceStrings>
+    <dirStrings>
+      <dir>$PROJECT_DIR$/FB</dir>
+    </dirStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -116,12 +140,24 @@
         <option value="$PROJECT_DIR$/Set/266. Palindrome Permitation.py" />
         <option value="$PROJECT_DIR$/String/824. Goat Latin.py" />
         <option value="$PROJECT_DIR$/Array/896. Monotonic Array.py" />
+        <option value="$PROJECT_DIR$/FB/020. Valid Parenthesis.py" />
+        <option value="$PROJECT_DIR$/FB/093. Restore IP Address.py" />
+        <option value="$PROJECT_DIR$/FB/468. Validate IP Address.py" />
+        <option value="$PROJECT_DIR$/FB/avg length of words in a sentence.py" />
+        <option value="$PROJECT_DIR$/FB/015. 3 Sum.py" />
+        <option value="$PROJECT_DIR$/FB/●&#9;Count the number of words in a sentence.py" />
+        <option value="$PROJECT_DIR$/FB/243. Shortest Word Distance.py" />
+        <option value="$PROJECT_DIR$/FB/283. Move Zeros.py" />
+        <option value="$PROJECT_DIR$/Recursion/494. Target Sum.py" />
+        <option value="$PROJECT_DIR$/FB/056. Merge Intervals.py" />
+        <option value="$PROJECT_DIR$/Array/090. Subsets II.py" />
+        <option value="$PROJECT_DIR$/FB/Neighbor Nodes.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="235" />
-    <option name="y" value="187" />
+    <option name="x" value="80" />
+    <option name="y" value="111" />
     <option name="width" value="1061" />
     <option name="height" value="775" />
   </component>
@@ -130,6 +166,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -140,18 +177,22 @@
             <path>
               <item name="Graduate-Algorithm-" type="b2602c69:ProjectViewProjectNode" />
               <item name="Graduate-Algorithm-" type="462c0819:PsiDirectoryNode" />
-              <item name="Array" type="462c0819:PsiDirectoryNode" />
+              <item name="FB" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Graduate-Algorithm-" type="b2602c69:ProjectViewProjectNode" />
               <item name="Graduate-Algorithm-" type="462c0819:PsiDirectoryNode" />
-              <item name="String" type="462c0819:PsiDirectoryNode" />
+              <item name="Recursion" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Graduate-Algorithm-" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Graduate-Algorithm-" type="462c0819:PsiDirectoryNode" />
+              <item name="Tree" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -170,8 +211,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.852. Peak Index in a Mountain Array">
-    <configuration name="215. Kth Largest Element in an Array" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.Neighbor Nodes">
+    <configuration name="056. Merge Intervals" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Graduate-Algorithm-" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -179,11 +220,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Heap" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/FB" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Heap/215. Kth Largest Element in an Array.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/FB/056. Merge Intervals.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -192,7 +233,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="347. Top K Frequent Elements" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="090. Subsets II" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Graduate-Algorithm-" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -200,11 +241,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Heap" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Array" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Heap/347. Top K Frequent Elements.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Array/090. Subsets II.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -213,7 +254,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="347. Top k Frequent Elements" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="283. Move Zeros" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Graduate-Algorithm-" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -221,11 +262,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Linked List" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/FB" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Linked List/347. Top k Frequent Elements.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/FB/283. Move Zeros.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -234,7 +275,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="852. Peak Index in a Mountain Array" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="494. Target Sum" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Graduate-Algorithm-" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -242,11 +283,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Binary Search" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Recursion" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Binary Search/852. Peak Index in a Mountain Array.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Recursion/494. Target Sum.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -255,7 +296,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Dijkstra's Shortest Path" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="Neighbor Nodes" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Graduate-Algorithm-" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -263,11 +304,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/BFS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/FB" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/BFS/Dijkstra's Shortest Path.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/FB/Neighbor Nodes.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -277,19 +318,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.Dijkstra's Shortest Path" />
-      <item itemvalue="Python.347. Top k Frequent Elements" />
-      <item itemvalue="Python.347. Top K Frequent Elements" />
-      <item itemvalue="Python.215. Kth Largest Element in an Array" />
-      <item itemvalue="Python.852. Peak Index in a Mountain Array" />
+      <item itemvalue="Python.283. Move Zeros" />
+      <item itemvalue="Python.494. Target Sum" />
+      <item itemvalue="Python.056. Merge Intervals" />
+      <item itemvalue="Python.090. Subsets II" />
+      <item itemvalue="Python.Neighbor Nodes" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.852. Peak Index in a Mountain Array" />
-        <item itemvalue="Python.215. Kth Largest Element in an Array" />
-        <item itemvalue="Python.347. Top K Frequent Elements" />
-        <item itemvalue="Python.347. Top k Frequent Elements" />
-        <item itemvalue="Python.Dijkstra's Shortest Path" />
+        <item itemvalue="Python.Neighbor Nodes" />
+        <item itemvalue="Python.090. Subsets II" />
+        <item itemvalue="Python.056. Merge Intervals" />
+        <item itemvalue="Python.494. Target Sum" />
+        <item itemvalue="Python.283. Move Zeros" />
       </list>
     </recent_temporary>
   </component>
@@ -307,15 +348,15 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="235" y="187" width="1061" height="775" extended-state="0" />
+    <frame x="80" y="111" width="1061" height="775" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.329429" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.329429" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -328,6 +369,25 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.329429" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Python Console" order="10" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout-to-restore>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -441,24 +501,113 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Set/266. Palindrome Permitation.py">
+    <entry file="file://$PROJECT_DIR$/Array/896. Monotonic Array.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+        <state relative-caret-position="510">
+          <caret line="34" column="55" selection-start-line="34" selection-start-column="55" selection-end-line="34" selection-end-column="55" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/String/824. Goat Latin.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
+        <state relative-caret-position="450">
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Array/896. Monotonic Array.py">
+    <entry file="file://$PROJECT_DIR$/Set/266. Palindrome Permitation.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="34" column="55" selection-start-line="34" selection-start-column="55" selection-end-line="34" selection-end-column="55" />
+        <state relative-caret-position="195">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Hash Table/001. Two Sum.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-98" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FB/093. Restore IP Address.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="2" lean-forward="true" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FB/468. Validate IP Address.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="43" selection-start-line="2" selection-start-column="43" selection-end-line="2" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FB/avg length of words in a sentence.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="328">
+          <caret line="35" selection-start-line="35" selection-end-line="36" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FB/243. Shortest Word Distance.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FB/●&#9;Count the number of words in a sentence.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="29" lean-forward="true" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FB/020. Valid Parenthesis.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" selection-start-line="22" selection-end-line="23" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FB/283. Move Zeros.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" selection-start-line="15" selection-end-line="15" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Array/090. Subsets II.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="263">
+          <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FB/056. Merge Intervals.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="246">
+          <caret line="35" column="13" lean-forward="true" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Recursion/494. Target Sum.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="314">
+          <caret line="21" column="1" selection-start-line="21" selection-start-column="1" selection-end-line="22" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FB/015. 3 Sum.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="262">
+          <caret line="48" lean-forward="true" selection-start-line="48" selection-end-line="50" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FB/Neighbor Nodes.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="28" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
         </state>
       </provider>
     </entry>

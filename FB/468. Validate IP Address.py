@@ -1,3 +1,7 @@
+""" string usage in python :
+  string.hexdigits
+        The string '0123456789abcdefABCDEF'
+"""
 class Solution(object):
     def validIPAddress(self, IP):
         """
