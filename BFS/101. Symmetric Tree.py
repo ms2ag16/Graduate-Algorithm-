@@ -13,6 +13,8 @@ class Solution(object):
         :type root: TreeNode
         :rtype: bool
         """
+        if not root:
+            return True
         from collections import deque
         lQueue, rQueue= deque([root.left]), deque([root.right])
         while lQueue and rQueue:

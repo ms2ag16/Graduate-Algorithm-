@@ -16,13 +16,15 @@ Input:
 Output: ["1->2->5", "1->3"]
 """
 # Definition for a binary tree node.
-# class TreeNode:
+# class TreeNode(object):
 #     def __init__(self, x):
 #         self.val = x
 #         self.left = None
 #         self.right = None
 
-class Solution:
+
+
+class Solution(object):
     def binaryTreePaths(self, root):
         """
         :type root: TreeNode
@@ -30,14 +32,14 @@ class Solution:
         """
         if not root:
             return []
-        res=[]
-        return self.dfs(root, str(root.val)+"->", res)
-    
-    def dfs(self,root, path, res):
-        if not root.right and not root.left:
-            res.append(path[:-2])
-        if root.right:
-            self.dfs(root.right, path+ str(root.right.val)+"->", res)
-        if root.left:
-            self.dfs(root.left, path+ str(root.left.val)+"->", res)
+        res = []
+        self.dfs(root, str(root.val), res)
         return res
+
+    def dfs(self, root, path, res):
+        if not root.left and not root.right:
+            return res.append(path)
+        if root.left:
+            self.dfs(root.left, path + '->' + str(root.left.val), res)
+        if root.right:
+            self.dfs(root.right, path + '->' + str(root.right.val), res)

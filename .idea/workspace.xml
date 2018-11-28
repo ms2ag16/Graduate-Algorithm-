@@ -2,19 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="baa2848d-24de-4e09-a385-4abc660d4091" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/FB/015. 3 Sum.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FB/056. Merge Intervals.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FB/093. Restore IP Address.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FB/243. Shortest Word Distance.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FB/283. Move Zeros.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FB/Neighbor Nodes.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FB/avg length of words in a sentence.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FB/●&#9;Count the number of words in a sentence.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Recursion/494. Target Sum.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DFS/112. Path Sum.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DFS/129. Sum Root to Leaf Numbers.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DFS/559. Maximum Depth of N-ary Tree.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FB/648. Replace Words.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Array/090. Subsets II.py" beforeDir="false" afterPath="$PROJECT_DIR$/Array/090. Subsets II.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FB/020. Valid Parenthesis.py" beforeDir="false" afterPath="$PROJECT_DIR$/FB/020. Valid Parenthesis.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FB/468. Validate IP Address.py" beforeDir="false" afterPath="$PROJECT_DIR$/FB/468. Validate IP Address.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BFS/101. Symmetric Tree.py" beforeDir="false" afterPath="$PROJECT_DIR$/BFS/101. Symmetric Tree.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -36,22 +29,22 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="py" value="37" />
+          <entry key="py" value="46" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Python" value="37" />
+          <entry key="Python" value="46" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="16458" />
+          <entry key="py" value="17122" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="16458" />
+          <entry key="Python" value="17122" />
         </counts>
       </usages-collector>
     </session>
@@ -68,10 +61,42 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Recursion/494. Target Sum.py">
+        <entry file="file://$PROJECT_DIR$/Tree/104. Maximum Depth of Binary Tree.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="314">
-              <caret line="21" column="1" selection-start-line="21" selection-start-column="1" selection-end-line="22" selection-end-column="60" />
+            <state relative-caret-position="126">
+              <caret line="21" column="24" lean-forward="true" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DFS/114. Flatten Binary Tree to Linked List.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-144" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/DFS/257. Binary Tree Paths.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-280" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/FB/648. Replace Words.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/BFS/101. Symmetric Tree.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="167">
+              <caret line="16" column="23" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -79,17 +104,35 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Array/090. Subsets II.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="263">
+            <state relative-caret-position="368">
               <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DFS/112. Path Sum.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="16" column="29" lean-forward="true" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DFS/113. Path Sum II.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="216">
+              <caret line="49" column="49" selection-start-line="49" selection-start-column="49" selection-end-line="49" selection-end-column="49" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/FB/Neighbor Nodes.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="28" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
+            <state relative-caret-position="210">
+              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
             </state>
           </provider>
         </entry>
@@ -152,12 +195,17 @@
         <option value="$PROJECT_DIR$/FB/056. Merge Intervals.py" />
         <option value="$PROJECT_DIR$/Array/090. Subsets II.py" />
         <option value="$PROJECT_DIR$/FB/Neighbor Nodes.py" />
+        <option value="$PROJECT_DIR$/DFS/559. Maximum Depth of N-ary Tree.py" />
+        <option value="$PROJECT_DIR$/DFS/129. Sum Root to Leaf Numbers.py" />
+        <option value="$PROJECT_DIR$/DFS/112. Path Sum.py" />
+        <option value="$PROJECT_DIR$/FB/648. Replace Words.py" />
+        <option value="$PROJECT_DIR$/BFS/101. Symmetric Tree.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="80" />
-    <option name="y" value="111" />
+    <option name="x" value="144" />
+    <option name="y" value="242" />
     <option name="width" value="1061" />
     <option name="height" value="775" />
   </component>
@@ -177,17 +225,17 @@
             <path>
               <item name="Graduate-Algorithm-" type="b2602c69:ProjectViewProjectNode" />
               <item name="Graduate-Algorithm-" type="462c0819:PsiDirectoryNode" />
+              <item name="BFS" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Graduate-Algorithm-" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Graduate-Algorithm-" type="462c0819:PsiDirectoryNode" />
+              <item name="DFS" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Graduate-Algorithm-" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Graduate-Algorithm-" type="462c0819:PsiDirectoryNode" />
               <item name="FB" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Graduate-Algorithm-" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Graduate-Algorithm-" type="462c0819:PsiDirectoryNode" />
-              <item name="Recursion" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Graduate-Algorithm-" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Graduate-Algorithm-" type="462c0819:PsiDirectoryNode" />
-              <item name="Tree" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -348,15 +396,15 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="80" y="111" width="1061" height="775" extended-state="0" />
+    <frame x="144" y="242" width="1061" height="775" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.329429" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.329429" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -569,31 +617,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/FB/283. Move Zeros.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" selection-start-line="15" selection-end-line="15" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Array/090. Subsets II.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="263">
-          <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/FB/056. Merge Intervals.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="246">
           <caret line="35" column="13" lean-forward="true" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Recursion/494. Target Sum.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="314">
-          <caret line="21" column="1" selection-start-line="21" selection-start-column="1" selection-end-line="22" selection-end-column="60" />
         </state>
       </provider>
     </entry>
@@ -606,9 +633,89 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/FB/Neighbor Nodes.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="28" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
+        <state relative-caret-position="210">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DFS/129. Sum Root to Leaf Numbers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="22" lean-forward="true" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DFS/559. Maximum Depth of N-ary Tree.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="500">
+          <caret line="41" column="37" lean-forward="true" selection-start-line="41" selection-start-column="37" selection-end-line="41" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Recursion/494. Target Sum.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="42" lean-forward="true" selection-start-line="12" selection-start-column="42" selection-end-line="12" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FB/283. Move Zeros.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" selection-start-line="15" selection-end-line="15" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Array/090. Subsets II.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DFS/113. Path Sum II.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="49" column="49" selection-start-line="49" selection-start-column="49" selection-end-line="49" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DFS/112. Path Sum.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="29" lean-forward="true" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tree/104. Maximum Depth of Binary Tree.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="21" column="24" lean-forward="true" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DFS/114. Flatten Binary Tree to Linked List.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-144" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FB/648. Replace Words.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BFS/101. Symmetric Tree.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="167">
+          <caret line="16" column="23" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DFS/257. Binary Tree Paths.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-280" />
       </provider>
     </entry>
   </component>
