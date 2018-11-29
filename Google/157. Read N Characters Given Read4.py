@@ -27,6 +27,7 @@ class Solution(object):
         :type n: Maximum number of characters to read (int)
         :rtype: The number of characters read (int)
         """
+        """ read4(buf), buf is the destination buffer"""
         idx=0
         while n>0:
             buf4=[""]*4             """         ["","","",""]         """
