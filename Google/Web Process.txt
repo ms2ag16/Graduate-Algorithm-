@@ -19,4 +19,7 @@ mapping an Internet Protocol address (IP address) to a physical machine address 
 14. Browser package the http request to TCP and TCP assign receiver and sender, and again it's IP in charge of transfer. 
 15. After IP delivered the package, http server and the server may return a notice that the website has bee redirected. HTTP Redirect
 16. Browser noticed the Redirect and again to go the redirect website 
+  16.1. This time, after 3-hands_shake, browser does not send package to TCP but to TLS. 
+  16.2. TSL put secure on top of the package and then TLS send the package to TCP again. 
+17. TCP package delivered to http server and return the website to browser. 
 
