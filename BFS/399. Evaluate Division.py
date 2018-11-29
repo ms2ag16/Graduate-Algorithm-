@@ -30,8 +30,7 @@ class Solution(object):
         for q in queries:
             
             res.append(self.bfs(q,graph))
-        return res
-                   
+        return res                   
         
     def buildGraph(self,equation, value, graph):
         def add_edge(front, end, value):
@@ -61,3 +60,5 @@ class Solution(object):
                     if neighbor not in visited:
                         queue.append((neighbor, value*product))
             return -1.0
+        
+        
