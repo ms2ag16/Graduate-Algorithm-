@@ -18,4 +18,19 @@ class Solution(object):
         :type s: str
         :rtype: int
         """
+        from collections import defaultdict
+        max_len=0
+        start=0
+        count=defaultdict(int）
+        for i in range(len(s)):
+            count[s[i]]+=1
+            while len(count)>2:
+              count[s[start]]-=1
+              if count[s[start]]==0:
+                  count.pop(s[start], None)
+              start+=1
+            max_len=max(max_len, i-start+1)
+        return max_len
+            
+        
         
