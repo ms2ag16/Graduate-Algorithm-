@@ -28,9 +28,11 @@ class Solution(object):
         :rtype: The number of characters read (int)
         """
         idx=0
-        buf4=[""]*4             """         ["","","",""]         """
-        l4=read4(buf4)
         while n>0:
+            buf4=[""]*4             """         ["","","",""]         """
+            l4=read4(buf4)
+            if not l4:
+                return idx
             for i in range(min(l4,n)):
                 buf[idx]=buf4[i]
                 idx+=1
