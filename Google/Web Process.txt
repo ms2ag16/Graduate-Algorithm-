@@ -1,0 +1,22 @@
+http://blog.jobbole.com/84870/
+
+1. browser： check website format if pass then 
+2. browser by default use http not https
+3. browser contact DNS and figure out what is the IP for webiste
+4. DNS check its own cache, if not check DNS Server 8.8.8.8, DNS package its request from its own 1.1.1.1. DNS contact TCP/IP. 
+5. UDP in TCP/IP get the request_package and assign sender_number and receiver_number, and leave the update_package to IP
+6. IP figure out the IP router and find that it's outside the gateway, and IP does not know the MAC address
+MAC=(A media access control address of a device is a unique identifier assigned to a network interface controller (NIC) )
+7. IP find local ARP to find MACxx.xx.xx.xx.xx.xx
+ARP= Address Resolution Protocol is a protocol for
+mapping an Internet Protocol address (IP address) to a physical machine address that is recognized in the local network.
+8. IP arrive Gateway and then go Internet and arrived 8.8.8.8, which is the DNS Server
+9. DNS Server contact DNS root '.' (total 13 in the world) and DNS root find out the IP address
+10. Now, broswer get the IP of the website. Now browser contact TCP/IP again to visit the IP address
+11. And this time is TCP connect and usually it's done by 3-hands-shake
+12. Three hand-shake are transder via IP
+13. After 3-hands_shake, TCP has connect a valid connection and inform the Browser. 
+14. Browser package the http request to TCP and TCP assign receiver and sender, and again it's IP in charge of transfer. 
+15. After IP delivered the package, http server and the server may return a notice that the website has bee redirected. HTTP Redirect
+16. Browser noticed the Redirect and again to go the redirect website 
+
