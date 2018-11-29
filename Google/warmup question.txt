@@ -1,0 +1,1 @@
+difference between bst (balanced search tree) and hash table. bst和hash table的搜索时间. 既然bst 搜索时间久then why bst? 
