@@ -5,6 +5,14 @@ class TreeNode(object):
     self.right=None
   def printTree(self):
     print self.val
+
+class Tree(object):
+  def __init__(self):
+      self.root=TreeNode()
+      self.queue=[]
+  def add(self, ele):
+    
+  
     
 
     
