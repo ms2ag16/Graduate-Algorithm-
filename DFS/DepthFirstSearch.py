@@ -1,21 +1,23 @@
-graph1 = {
-    'A' : ['B','S'],
-    'B' : ['A'],
-    'C' : ['D','E','F','S'],
-    'D' : ['C'],
-    'E' : ['C','H'],
-    'F' : ['C','G'],
-    'G' : ['F','S'],
-    'H' : ['E','G'],
-    'S' : ['A','C','G']
-}
+""" recursive logic"""
+""" 
+递归结束条件：节点是None，结束函数调用
+递归改变：每次都要把节点添加到节点集合当中去
+递归调用：对于每一个当前节点的相邻节点，只要不在节点集合中，就调用dfs进行搜索 
+"""
+def iterDFS():
+    stack=[]
+    visited=set()
+    stack.append(self.root)
+    visited.add(self.root)
+    while stack:
+        node=stack.pop()
+        visited.add(node)
+        do_proccess(node)
+        neighbors=generated_unvisited_neighbors(node, visited)
+        stack.extend(neighbors)
+        
+    
+        
+        
 
-def dfs(graph, node, visited):
-  if node not in visited:
-    visited.append(node)
-    for neigh in graph[node]:
-      dfs(graph, neigh, visited)
-  return visited
- 
-visited=dfs(graph1, 'A', [])
-print visited
+
