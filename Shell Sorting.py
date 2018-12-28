@@ -1,13 +1,5 @@
-def shellSort(arr):
-    import math
-    gap=1
-    while gap>0:
-        for i in range(gap, len(arr)):
-            temp=arr[i]
-            j=i-gap
-            while j >= 0 and arr[j]>temp:
-                arr[j+gap]=arr[j]
-                j-=gap
-            arr[j+gap]=temp
-        gap=math.floor(gap/3)
-    return arr
+stones = [[0,0],[0,1],[1,0],[1,2],[2,1],[2,2]]
+res=[]
+for stone in stones:
+    res.append(map(tuple(),stone))
+print (res)
