@@ -5,9 +5,12 @@ public class Distinct{
         int sum = inputArray[0];
         Arrays.sort(inputArray);
         int point = inputArray[0];
-        // change the i < size to i < size -1
-        for (int i=1; i < size-1; i++){
+        if (size != inputArray.length){
+            size = inputArray.length;
+        }
+        for (int i=1; i < size; i++){
             if (point != inputArray[i]){
+                System.out.println(i);
                 sum += inputArray[i];
                 point = inputArray[i];
             }
@@ -19,8 +22,8 @@ public class Distinct{
     }
     
     public static void main(String []args){
-        int [] myIntArray = new int [] {123,45,46,23,97};
-        int size = 5;
+        int [] myIntArray = new int [] {10,20,30,40,50};
+        int size = 4;
         System.out.println(sumDistinct(size, myIntArray));
     }
 }
