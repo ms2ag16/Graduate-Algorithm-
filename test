@@ -1,0 +1,29 @@
+def xgcd(b, a):
+    x0, x1, y0, y1 = 1, 0, 0, 1
+    while a != 0:
+        q, b, a = b // a, a, b % a
+        x0, x1 = x1, x0 - q * x1
+        y0, y1 = y1, y0 - q * y1
+    return  b, x0, y0
+
+def cube_root(n):
+    low = 0
+    high = n
+    while low < high:
+        mid = (low+high)//2
+        if mid**3 < n:
+            low = mid+1
+        else:
+            high = mid
+    return low
+
+def broadcast_attack(value_set):
+    N = 1
+    for c, n in value_set:
+      N *= n
+    C = 0
+    for c,n in value_set:
+      m = N // n
+      r, s, d = xgcd(n,m)
+      C += c * d * m
+    return C % N
