@@ -15,4 +15,48 @@ BOOBOOB
 问：把人和自行车配对，输出vector<pair<int, int>>每个人对应的自行车. {i, j} 是人i对应自行车j
 """
 
-from collections import deque
+from heapq import heappop, heappush
+
+class Solution(object):
+    def findPairs(self, matrix):
+        visited = set([])
+        peoples = []
+        bikes = []
+        nrow, ncol = len(matrix), len(matrix[0])
+        heap = []
+        res = []
+
+        for i in range(nrow):
+            for j in range(ncol):
+                if matrix[i][j] == 'P':
+                    peoples.append((i, j))
+                if matrix[i][j] == 'B':
+                    bikes.append((i, j))
+        #print(bikes, peoples)
+
+        for p in peoples:
+            px, py = p
+            for b in bikes:
+                bx, by = b
+                dist = abs(px - bx) + abs(py - by)
+                heappush(heap, (dist, p, b))
+
+        while heap:
+            minDist, p, b = heappop(heap)
+            if b not in visited and p not in visited:
+                visited.add(b)
+                visited.add(p)
+                res.append((p,b))
+
+        print (res)
+
+
+
+
+if __name__ == "__main__":
+    matrix = [ ['O', 'P', 'O', 'B', 'P', 'O', 'P'],
+               ['O', 'O', 'O', 'O', 'O', 'O', 'O'],
+               ['B', 'O', 'O', 'B', 'O', 'O', 'B']]
+
+    print Solution().findPairs(matrix)
+
