@@ -14,3 +14,5 @@ BOOBOOB
 
 问：把人和自行车配对，输出vector<pair<int, int>>每个人对应的自行车. {i, j} 是人i对应自行车j
 """
+
+from collections import deque
